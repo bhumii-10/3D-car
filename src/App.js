@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Parent from "./Components/Parent";
+import PorscheViewer from "./Components/PorscheViewer";
+import Porsche356 from "./Components/Porsche356";
 
-function App() {
-  return (
+function App()
+{
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PorscheViewer/><br></br>
+      <Porsche356/>
     </div>
   );
 }
-
 export default App;
